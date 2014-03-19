@@ -11,7 +11,9 @@ end
 
 describe "method a" do
   it "prints a specified output to the screen" do
-    subject.stub(:a) {'This shows the method a with two arguments'}
+   # subject.stub(:a) {'This shows the method a with two arguments'}
+     subject.stub(:a).and_return(false)
+   # this tests the a method to see what would be the output if the puts method returned a false
   end
 end
 
